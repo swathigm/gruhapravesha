@@ -173,9 +173,9 @@ body{font-variant-numeric:lining-nums}body.kn{font-family:"Noto Serif Kannada","
 .music{position:fixed;right:14px;bottom:14px;z-index:20;width:44px;height:44px;border-radius:50%;background:rgba(255,249,234,.95);border:1px solid var(--gold);color:var(--brown);font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.25)}.music.off{opacity:.55;text-decoration:line-through}
 .tap{display:none}
 .music{display:none}
-#doorBtn{height:min(64vh,calc(84vw*1.53))}
-.tap,body.kn .tap{display:block;margin-top:6px;padding:14px 30px;border-radius:999px;background:linear-gradient(#8A2430,#5E1620);border:2px solid #E0C98D;box-shadow:0 0 0 3px #5E1620,0 6px 16px rgba(60,20,10,.35);color:#FFF4D6;font-weight:700;font-size:clamp(22px,6.2vw,28px);letter-spacing:.5px;line-height:1.3;cursor:pointer;animation:tapPulse 1.4s ease-in-out infinite}
-@keyframes tapPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+#doorBtn{height:min(70vh,calc(86vw*1.53))}
+.tap,body.kn .tap{display:block;margin-top:4px;padding:8px 20px;border-radius:999px;background:#6E1B25;border:1px solid #E0C98D;color:#FFF4D6;font-weight:600;font-size:18px;letter-spacing:.3px;line-height:1.3;cursor:pointer;animation:tapPulse 1.6s ease-in-out infinite}
+@keyframes tapPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
 </style>
 </head>
 <body class="locked">
@@ -205,7 +205,7 @@ body{font-variant-numeric:lining-nums}body.kn{font-family:"Noto Serif Kannada","
       <g id="marigold"></g>
     </svg>
   </button>
-  <p class="tap" id="tapBtn" role="button" tabindex="0">👆 ಇಲ್ಲಿ ಒತ್ತಿ<br>Tap here to open</p>
+  <p class="tap" id="tapBtn" role="button" tabindex="0">👆 ಇಲ್ಲಿ ಒತ್ತಿ · Tap to open</p>
   <button id="openBtn" type="button">
     <span class="g1" data-en="Gruhapravesha" data-kn="ಗೃಹಪ್ರವೇಶ">Gruhapravesha</span>
     <span class="g2" data-en="Gajendra &amp; Malathi" data-kn="ಗಜೇಂದ್ರ ಮತ್ತು ಮಾಲತಿ">Gajendra &amp; Malathi</span>
