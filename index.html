@@ -445,7 +445,7 @@ function mandala(g,cx,cy,rings,core){
 
 /* bell */
 var actx=null;
-function chime(){
+function chime(){return; /* bell sound off: only the music plays */
   try{
     actx=actx||new (window.AudioContext||window.webkitAudioContext)();
     if(actx.state==='suspended')actx.resume();
