@@ -152,6 +152,15 @@ body.kn .night .mb{letter-spacing:calc(var(--u)*1)}
 body.kn .await h2{letter-spacing:0}
 .await .nm{font-weight:700;font-size:calc(var(--u)*23);color:var(--deep);margin-top:calc(var(--u)*14);line-height:1.4}
 .await .end{font-size:calc(var(--u)*18.7);letter-spacing:2px;color:var(--muted);margin-top:calc(var(--u)*26);text-transform:uppercase}
+/* one template throughout: cream panels with gold lines on dotted maroon */
+main{background-color:var(--maroon);background-image:radial-gradient(rgba(238,217,162,.22) 1.2px,transparent 1.6px);background-size:16px 16px;padding-bottom:calc(var(--u)*18)}
+.hosts,.details,.venue,.night,.await{margin:calc(var(--u)*18) calc(var(--u)*14) 0;background:radial-gradient(ellipse at 50% 30%,#FFF9EA,#F1E0BB);border:2px solid var(--gold);border-radius:calc(var(--u)*16);box-shadow:inset 0 0 0 5px #FBF1DA,inset 0 0 0 6px rgba(207,169,107,.8)}
+.hosts{padding-bottom:calc(var(--u)*30)}
+.details{padding-left:calc(var(--u)*22);padding-right:calc(var(--u)*22)}
+.night:before,.night:after{display:none}
+.night .sk{color:var(--maroon)}.night .mb{color:var(--muted)}.night p.w{color:var(--deep)}
+.plaque{background:linear-gradient(#7A1F2B,#4E1119);width:calc(var(--u)*300)}
+.house{font-size:calc(var(--u)*28)}
 </style>
 </head>
 <body class="locked">
@@ -337,9 +346,9 @@ function mandala(g,cx,cy,rings,core){
 (function(){
   var g=$('mandala');
   for(var i=0;i<60;i++){var a=i*6*Math.PI/180;mk('circle',{cx:195+100*Math.cos(a),cy:640+100*Math.sin(a),r:1.5,fill:'#C99A3B'},g)}
-  mandala(g,195,640,[[70,22,22,'#7A1F2B'],[48,22,16,'#1F4A2B',11],[26,22,10,'#D9B25A']],26);
+  mandala(g,195,640,[[70,22,22,'#7A1F2B'],[48,22,16,'#9C3D2E',11],[26,22,10,'#D9B25A']],26);
   /* diyas around the rangoli */
-  [-150,-120,-90,-60,-30].forEach(function(d){var a=d*Math.PI/180;mk('use',{href:'#diya',transform:'translate('+(195+122*Math.cos(a))+' '+(640+122*Math.sin(a))+')'},g)});
+  [-130,-110,-90,-70,-50].forEach(function(d){var a=d*Math.PI/180;mk('use',{href:'#diya',transform:'translate('+(195+122*Math.cos(a))+' '+(640+122*Math.sin(a))+')'},g)});
   /* marigold strands with mango leaves down both sides of the arch */
   var st=$('strands');
   [43,347].forEach(function(x){
@@ -351,7 +360,7 @@ function mandala(g,cx,cy,rings,core){
   });
   var c=$('corners');
   [[46,48],[344,48]].forEach(function(p){mandala(c,p[0],p[1],[[14,11,12,'#8A2A33'],[6,8,8,'#C99A3B',22]],6)});
-  document.querySelectorAll('svg.ro').forEach(function(s){mandala(s,60,60,[[34,18,16,'#7A1F2B'],[20,14,12,'#1F4A2B',15],[9,11,8,'#D9B25A']],9)});
+  document.querySelectorAll('svg.ro').forEach(function(s){mandala(s,60,60,[[34,18,16,'#7A1F2B'],[20,14,12,'#9C3D2E',15],[9,11,8,'#D9B25A']],9)});
 })();
 
 /* door artwork */
